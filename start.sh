@@ -1,9 +1,12 @@
 #!/bin/sh
 
-cd /opt/$API_PATH/ || exit
+cd $API_PATH || exit
 
 # Crie o diretório de saída se ainda não existir
 mkdir -p /output || exit
+
+# Crie o diretório de pid se ainda não existir
+mkdir -p /pid || exit
 
 # Obtenha a data atual no formato YYYY-MM-DD
 CURRENT_DATE=$(date +"%Y-%m-%d")
