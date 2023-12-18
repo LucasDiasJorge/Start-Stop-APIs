@@ -1,5 +1,11 @@
 #!/bin/sh
 
+API_PATH="/opt/apiv2/"
+CORE_JAR="core.jar"
+REPORT_JAR="report.jar"
+READER_JAR="reader.jar"
+INTEGRATION_JAR="integration.jar"
+
 cd "$API_PATH" || exit
 
 # Create the output directory if it doesn't exist yet
