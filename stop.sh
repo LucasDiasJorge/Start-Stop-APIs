@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd /opt/$API_PATH/ || exit
+cd $API_PATH || exit
 
 # Stop the Core service
 CORE_PID=$(cat /pid/core_pid.txt 2>/dev/null)
