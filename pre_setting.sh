@@ -12,7 +12,10 @@ cd "$API_PATH" || exit
 
 # Create the output directory if it doesn't exist yet
 mkdir -p output
-mkdir -p core || mkdir -p reader || mkdir -p report || mkdir -p integration
+mkdir -p output/core
+mkdir -p output/reader
+mkdir -p output/report
+mkdir -p output/integration
 
 # Create the pid directory if it doesn't exist yet
 mkdir -p pid || exit
